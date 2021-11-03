@@ -4,11 +4,18 @@
 #include <time.h>
 #include <Windows.h>
 
+void gotoxy(int x, int y);
 double intro_game(char team_name);
 void display_line(int rand);
 void game_control(clock_t start, double* pst);
 
 
+void gotoxy(int x, int y) {
+
+    COORD Pos = { x - 1, y - 1 };
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Pos);
+
+}
 
 // 게임에 대한 설명, 제한시간
 double intro_game(char team_name) {
@@ -49,7 +56,6 @@ double intro_game(char team_name) {
 
     return game_time;
 }
-
 
 
 // 줄다리기 줄을 출력
