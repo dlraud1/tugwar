@@ -118,6 +118,6 @@ int main(void) {
 
     gotoxy(1, 15);
     printf("게임을 종료합니다. \n");
-
+ 
     return 0;
 }
