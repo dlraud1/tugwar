@@ -87,10 +87,10 @@ void display_start()
     int i, r_start = 20;
     display_line(r_start);
 
-    gotoxy(65, 6);
-    printf("사용자");
+     gotoxy(62, 6);
+    printf("player");
     gotoxy(12, 6);
-    printf("컴퓨터");
+    printf("computer");
 
     gotoxy(1, 13);
     printf("아무키나 누르면 경기를 시작합니다. ");
