@@ -120,4 +120,4 @@ int main(void) {
     printf("게임을 종료합니다. \n");
 
     return 0;
-}
+} 
